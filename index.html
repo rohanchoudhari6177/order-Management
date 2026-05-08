@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Order Management</p>
+        <h1>Dashboard</h1>
+      </div>
+      <div class="topbar-badge">Live</div>
+    </header>
+
+    <div class="page-grid">
+      <div class="form-box">
+        <h2>Place Order</h2>
+
+        <input type="text" placeholder="Customer Name">
+        <input type="text" placeholder="Shipping Address">
+
+        <select>
+          <option>Headphones</option>
+          <option>Keyboard</option>
+          <option>Mouse</option>
+        </select>
+
+        <input type="number" placeholder="Quantity">
+
+        <button onclick="placeOrder()">Place Order</button>
+      </div>
+
+      <div class="dashboard">
+        <div class="dashboard-header">
+          <h2>Order Dashboard</h2>
+          <p>Monitor recent orders and shipment status.</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-label">Total Orders</span>
+            <strong>24</strong>
+          </div>
+          <div class="stat-card accent">
+            <span class="stat-label">Pending</span>
+            <strong>5</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Shipped</span>
+            <strong>19</strong>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>101</td>
+              <td>Rohan</td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>102</td>
+              <td>Amit</td>
+              <td><span class="status shipped">Shipped</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
